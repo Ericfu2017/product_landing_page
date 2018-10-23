@@ -1,0 +1,130 @@
+body {
+  background: beige; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    font-family: lobster;
+    margin: 0 40px 0 -10px; 
+    padding: 0;
+    background: beige;  
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  #header-img {
+      margin-right: 20px;
+  }
+
+
+  .header-right ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 80px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  li {
+      padding: 15px;
+      
+  }
+  
+  li a {
+    text-decoration: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px auto;
+  }
+
+  .lotto-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ #form {
+   display: flex;
+   flex-direction: column;
+ }
+
+ input {
+   margin-top: 20px;
+   padding: 10px;
+   width: 200px;
+   margin-left: 60px;
+ }
+
+ .btn {
+   margin-top: 20px;
+   margin-left: 113px;
+   padding: 10px 22px;
+   width: 100px;
+   background-color: rgb(200, 223, 116);
+   border-radius: 5px;
+   
+ }
+
+ .btn:hover {
+   background-color: blanchedalmond;
+   transition-duration: 0.4s;
+ }
+
+ .features {
+   margin: 150px 120px;
+ }
+
+.price {
+  margin-top: 100px;
+}
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -30px 120px;
+    background-color: rgb(244, 247, 247);
+  } 
+
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+    font-size: 16px;
+  }
+
+  span {
+    margin: 0;
+    padding: 0;
+  }
+ 
+
+  @media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .header-right ul {
+        flex-wrap: wrap;
+    }
+    .main {
+      margin-top: 200px;
+    }
+    .features {
+      margin: 30px 30px;
+    }
+  }
